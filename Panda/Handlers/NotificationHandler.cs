@@ -8,6 +8,11 @@ using System.Collections.Specialized;
 
 namespace Panda.Handlers
 {
+
+    //Step 1: Create your own GenericHandler.ashx and replace the bass class with this one [NotificationHandler]
+    //Step 2: Override the abstract methods below in your new GenericHandler.ashx
+    //Setp 3: Direct notifications traffic under the notifications of your Panda Stream cloud to your new GenericHandler.ashx
+
     public abstract class NotificationHandler : IHttpHandler
     {
         #region IHttpHandler Members
