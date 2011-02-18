@@ -11,7 +11,7 @@ namespace Panda.Handlers
 
     //Step 1: Create your own GenericHandler.ashx and replace the bass class with this one [NotificationHandler]
     //Step 2: Override the abstract methods below in your new GenericHandler.ashx. 
-                //Be sure to set: HttpContext.Current.Response.Status = "200"; for each one
+                //Be sure to set: HttpContext.Current.Response.StatusCode = "200"; for each one
     //Setp 3: Direct notifications traffic under the notifications tab of your Panda Stream Cloud Control Panel to your new GenericHandler.ashx
 
     public abstract class NotificationHandler : IHttpHandler
